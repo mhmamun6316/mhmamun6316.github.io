@@ -544,11 +544,6 @@ header{
     color: var(--first-color);
 }
 
-.qualification_icon{
-    font-size: 1.8rem;
-    margin-right: 4rem;
-}
-
 .qualification_data{
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
@@ -563,7 +558,7 @@ header{
 .qualification_subtitle{
     display: inline-block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-0-5);
 }
 
 .qualification_calendar{
@@ -901,13 +896,22 @@ header{
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+    align-items: center;
 }
 
 .footer_link:hover{
     color: var(--first-color-lighter);
 }
 
+.footer_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer_social{
+    display: flex;
+    justify-content: center;
     font-size: 1.25rem;
     margin-right: var(--mb-1-5);
 }
@@ -1001,6 +1005,11 @@ header{
         font-size: var(--normal-font-size);
     }
 
+    .qualification_icon{
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+
     .qualification_data{
         gap: .5rem;
     }
@@ -1059,8 +1068,7 @@ header{
      .skills_container,
      .portfolio_content,
      .project_container,
-     .contact_container,
-     .footer_container{
+     .contact_container{
         grid-template-columns: repeat(2,1fr);
      }
 
@@ -1070,6 +1078,11 @@ header{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .qualification_icon{
+        font-size: 1.8rem;
+        margin-right: 4rem;
     }
  
 }
@@ -1240,6 +1253,8 @@ header{
 
     .footer_socials{
         justify-self: flex-end;
+        display: flex;
+        align-items: center;
     }
 
     .footer_copy{
@@ -1303,4 +1318,32 @@ header{
     background: #fff url('../img/preloader.gif') no-repeat center center;
     position: fixed;
     z-index: 99999;
+}
+
+.intro{
+    display: flex;
+}
+
+.typing{
+    margin-left: 6px;
+    position: relative;
+}
+
+.typing::after{
+    content: " ";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 5%;
+    border-bottom:20px solid var(--text-color);
+    animation: blink .5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
