@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -545,7 +546,7 @@ header{
 
 .qualification_icon{
     font-size: 1.8rem;
-    margin-right: var(--mb-0-25);
+    margin-right: 4rem;
 }
 
 .qualification_data{
@@ -594,7 +595,7 @@ header{
     display: block;
 }
 
-.qualification_button.qualification_active{
+.qualification_button .qualification_active{
     color: var(--first-color);
 }
 /*==================== SERVICES ====================*/
@@ -699,7 +700,7 @@ header{
 
 /*==================== PORTFOLIO ====================*/
 .portfolio_container{
-    overflow: hidden;
+    overflow: initial;
 }
 
 .portfolio_content{
@@ -730,7 +731,7 @@ header{
     content: '';
 }
 
-.swiper_portfolio_icon{
+.swiper-portfolio-icon{
     font-size: 2rem;
     color: var(--first-color);
 }
@@ -743,11 +744,11 @@ header{
     right: -.5rem;
 }
 
-.swipper-container-horizontal > .swipper-pagination-bullets{
+.swiper-container-horizontal > .swiper-pagination-bullets{
     bottom: -2.5rem;
 }
 
-.swipper-pagination-bullet-active{
+.swiper-pagination-bullet-active{
     background-color: var(--first-color);
 }
 
@@ -1063,11 +1064,13 @@ header{
         grid-template-columns: repeat(2,1fr);
      }
 
-     .qualification_sections{
-         display: grid;
-         grid-template-columns: .6fr;
-         justify-content: center;
-     }
+   
+
+     .qualification_section{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
  
 }
 
@@ -1173,7 +1176,7 @@ header{
         margin: 0 var(--mb-1);
     }
 
-    .qualification_sections{
+    .qualification_section{
         grid-template-columns: .5fr;
     }
 
@@ -1281,7 +1284,7 @@ header{
         right: -3.5rem;
     }
 
-    .swipper-container-horizontal > .swipper-pagination-bullet{
+    .swiper-container-horizontal > .swiper-pagination-bullet{
         bottom: -4.5rem;
     }
 
@@ -1292,4 +1295,12 @@ header{
     .contact_input{
         grid-template-columns: repeat(2,1fr);
     }
+}
+
+#loading{
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../img/preloader.gif') no-repeat center center;
+    position: fixed;
+    z-index: 99999;
 }

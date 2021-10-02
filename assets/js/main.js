@@ -34,7 +34,7 @@ const skillsContent = document.getElementsByClassName('skills_content'),
       skillsHeader = document.querySelectorAll('.skills_header')
 
 function toggleSkills(){
-    let itemClass = this.parentNode.ClassName
+    let itemClass = this.parentNode.className
     for( i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills_content skills_close'
     }
@@ -188,3 +188,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== PreLoader ====================*/  
+var preloader = document.getElementById('loading');
+
+function myFunction(){
+    preloader.style.display = 'none';
+}
