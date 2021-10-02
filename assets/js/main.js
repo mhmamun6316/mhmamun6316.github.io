@@ -218,3 +218,20 @@ let letter = '';
 
     setTimeout(type, 400);
 }());
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('.home_title',{}); 
+sr.reveal('.home_subtitle',{delay: 200}); 
+sr.reveal('.home_button',{delay: 400});
+sr.reveal('.home_description',{delay: 600}); 
+sr.reveal('.home_img',{delay: 600}); 
+sr.reveal('.home_social',{origin:'left', interval: 200}); 
+

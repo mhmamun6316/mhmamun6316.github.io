@@ -305,6 +305,11 @@ header{
 .home_title{
     font-size: var(--big-font-size);
 }
+
+.home_title_name{
+    color: var(--first-color);    
+}
+
 .home_subtitle{
     font-size: var(--h3-font-size);
     color: var(--text-color);
