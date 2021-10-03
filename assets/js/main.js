@@ -30,22 +30,22 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills_content'),
-      skillsHeader = document.querySelectorAll('.skills_header')
+// const skillsContent = document.getElementsByClassName('skills_content'),
+//       skillsHeader = document.querySelectorAll('.skills_header')
 
-function toggleSkills(){
-    let itemClass = this.parentNode.className
-    for( i = 0; i < skillsContent.length; i++){
-        skillsContent[i].className = 'skills_content skills_close'
-    }
-    if(itemClass === 'skills_content skills_close'){
-        this.parentNode.className = 'skills_content skills_open'
-    }
-}
+// function toggleSkills(){
+//     let itemClass = this.parentNode.className
+//     for( i = 0; i < skillsContent.length; i++){
+//         skillsContent[i].className = 'skills_content skills_close'
+//     }
+//     if(itemClass === 'skills_content skills_close'){
+//         this.parentNode.className = 'skills_content skills_open'
+//     }
+// }
 
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click',toggleSkills)
-})
+// skillsHeader.forEach((el) =>{
+//     el.addEventListener('click',toggleSkills)
+// })
 
 
 /*==================== QUALIFICATION TABS ====================*/
@@ -235,3 +235,11 @@ sr.reveal('.home_description',{delay: 600});
 sr.reveal('.home_img',{delay: 600}); 
 sr.reveal('.home_social',{origin:'left', interval: 200}); 
 
+/*SCROLL ABOUT*/
+sr.reveal('.about_img',{}); 
+sr.reveal('.about_name',{origin:'left',delay: 400}); 
+sr.reveal('.about_description',{delay: 400}); 
+sr.reveal('.about_buttons',{delay: 600}); 
+
+/*SCROLL SKILLS*/
+sr.reveal('.skills_data',{delay: 200}); 
