@@ -68,6 +68,8 @@ tabs.forEach(tab =>{
     })
 })
 
+/* ===================Work Code ==================*/
+
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services_modal'),
       modalBtns = document.querySelectorAll('.services_button'),
@@ -242,4 +244,4 @@ sr.reveal('.about_description',{delay: 400});
 sr.reveal('.about_buttons',{delay: 600}); 
 
 /*SCROLL SKILLS*/
-sr.reveal('.skills_data',{delay: 200}); 
+sr.reveal('.skills_data',{delay: 200});
